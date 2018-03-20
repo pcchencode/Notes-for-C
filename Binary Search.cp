@@ -45,7 +45,8 @@ int main(){
         cout << arr[i]<<" ";
     }
     cout <<"\n";
-    //第二步開始做Binary Search演算法：因為這之中low,high,middle位置會跳來跳去，不宜使用for迴圈
+    //第二步開始做Binary Search演算法：因為這之中low,high,middle位置會跳來跳去，不宜使用雙重for迴圈
+    //for loop為計數型迴圈，必須要裡頭的i有一定的規律可言
     //先寫第一步
     int low=0, high=4,middle=0,find=0;
 
