@@ -13,7 +13,7 @@ int main(){
     int arr[] = {5, 4, 3, 2, 87};
     
     for (int I=1; I<=4; I++){
-    
+        //Insertion Sort之所以可以用雙重迴圈寫而不用while，是因為置換順序有規律可言
         for (int i=I; i>0; --i){ //棒棒直接插在最後一根的情形
             j = i-1;
             tmp = arr[j];
