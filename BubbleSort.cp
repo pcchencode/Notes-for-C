@@ -12,9 +12,6 @@ void swap(int &a, int &b){
     b = tmp;
 }
 
-
-
-
 void bubblesort(int array[], int length){
     for (int i=0; i<length; i++){
         for (int j=i+1; j<=length; j++){
@@ -24,6 +21,8 @@ void bubblesort(int array[], int length){
         }
     }
 }
+// 最大值有如氣泡一樣，每次執行都會跑到最右邊去。
+// 已排序的會先在最右邊出現
 
 
 
