@@ -13,10 +13,10 @@ void swap(int &a, int &b){
 }
 
 void bubblesort(int array[], int length){
-    for (int i=0; i<length; i++){
-        for (int j=i+1; j<=length; j++){
-            if (array[i] > array[j] ){
-                swap(array[i], array[j]);
+    for (int I=length; I>=0; --I){
+        for (int j=0; j<I; j++){
+            if (array[j] > array[j+1] ){
+                swap(array[j], array[j+1]);
             }
         }
     }
@@ -27,23 +27,22 @@ void bubblesort(int array[], int length){
 
 
 int main(){
-    double START,END;
-    START = clock();
+    //double START,END;
+    //START = clock();
     int a,b,c,d,e;
     cout<<"請分別輸入五個數字用來排序：";
     cin>> a>> b >> c >> d >> e;
-
+    
     int arr[] = {a, b, c, d, e};
-
+    
     bubblesort(arr, 5);
     for (int i=0;i<5 ;i++){
         cout << arr[i]<<" ";
     }
     cout <<endl;
-    END = clock();
-    cout << endl << "程式執行所花費：" << (double)clock()/CLOCKS_PER_SEC << " S" ;
-    cout << endl << "進行運算所花費的時間：" << (END - START) / CLOCKS_PER_SEC << " S" << endl;
+    //END = clock();
+    //cout << endl << "程式執行所花費：" << (double)clock()/CLOCKS_PER_SEC << " S" ;
+    //cout << endl << "進行運算所花費的時間：" << (END - START) / CLOCKS_PER_SEC << " S" << endl;
     return 0 ;
-
+    
 }
-
