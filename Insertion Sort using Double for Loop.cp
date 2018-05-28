@@ -4,6 +4,7 @@
 #include <cmath> // 引入數學函數運算的標題檔
 #include <time.h> // 計算程式運算的標題檔
 
+// Insertion Sort: 棒棒後面那個值一直往前面插、直到插到對的位置（如果比左邊的小就一直往左移）
 using namespace std;
 
 
