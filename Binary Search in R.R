@@ -23,7 +23,8 @@ BinarySearch = function(a){
 data <- c(43,5,1,2,54,6,7,4,82)
 #cat("Please enter the searching number") # prompt
 #search <- scan(n=1)
-search <- 3
+search <- 3 # initial your searching value
+# R不像python或c++那樣本體是一個programmer，R可以執行部分的指令，因此沒有內建類似cin或input這種等使用者鍵入後繼續執行下一行指令的東西。
 
 ###########################################################
 if (BinarySearch(data) ==0){
