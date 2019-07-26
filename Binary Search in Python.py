@@ -1,4 +1,4 @@
-# Binary Search
+# Binary Search, this is a simple test
 import numpy as np
 
 def BinarySearch(a):
